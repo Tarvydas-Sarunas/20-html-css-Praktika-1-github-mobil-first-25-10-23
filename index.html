@@ -4,6 +4,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- font========= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- font========= -->
+  <!-- icon FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- icon FontAwesome -->
+
   <!-- Title Icon -->
   <link rel="icon" type="image/x-icon" href="/img/icon code academi.png">
   <!-- Title Icon -->
@@ -13,7 +25,201 @@
 </head>
 
 <body>
-  <h1>Praktika 1 github mobil first</h1>
+  <header>
+    <button class="burger burger-menu-btn">
+      <span class="line ln1"></span>
+      <span class="line ln2"></span>
+      <span class="line ln3"></span>
+    </button>
+
+    <nav class="nav nav--main">
+      <ul class="unlisted nav_list">
+        <li><a class="nav_link" href="#">Home</a></li>
+        <li>
+          <p class="nav_link has-children">Layouts</p>
+          <ul class="unlisted submenu">
+            <li><a href="#" class="submenu_link">Left Sidbar</a></li>
+            <li><a href="#" class="submenu_link">Right Sidebar</a></li>
+            <li><a href="#" class="submenu_link">No Sidbar</a></li>
+            <li><a href="#" class="submenu_link">Submenu</a></li>
+          </ul>
+        </li>
+        <li><a class="nav_link" href="#">Element</a></li>
+        <li><Button class="btn nav--btn"></Button></li>
+      </ul>
+    </nav>
+
+    <a class="header header--logo" href="#">Landed</a>
+  </header>
+
+  <main>
+    <!-- hero===================== -->
+    <section class="section hero">
+      <div class="hero-container">
+        <h2 class="hero_title">The future has landed</h2>
+        <p class="hero_text">And there are no hoverboards or flying cars. Just apps. Lots of mother flipping apps.</p>
+        <img class="hero_img" src="/img/pic01.jpg" alt="computer in the cercle">
+      </div>
+      <i class="fa hero_fa fa-angle-down" aria-hidden="true"></i>
+    </section>
+
+    <!-- about========================= -->
+    <section class="section about">
+      <img src="/img/pic02.jpg" alt="stalas su kede ir keliais architekto irankiais ant stalo" class="about-img">
+      <div class="container">
+        <div class="about-title-container">
+          <h2 class="about-title">Odio faucibus ipsum integer consequat</h2>
+          <p class="about-subtitle">Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+        </div>
+        <div class="about-text-container">
+          <p class="about-text">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor
+            semper.
+            Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet augue
+            varius
+            tempus lobortis porttitor accumsan consequat adipiscing lorem dolor.</p>
+        </div>
+        <div class="about-text-container">
+          <p class="about-text">Morbi enim nascetur et placerat lorem sed iaculis neque ante adipiscing adipiscing metus
+            massa. Blandit orci porttitor semper. Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi
+            sed nascetur cep aliquet augue varius tempus. Feugiat lorem ipsum dolor nullam.</p>
+        </div>
+        <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <!-- section about 2 -->
+
+    <section class="section about">
+      <img src="/img/pic03.jpg" alt="tuscia traukiniu stotis saulelidyje" class="about-img2">
+      <div class="container">
+        <div class="about-title-container about-title-container2">
+          <h2 class="about-title">Interdum amet non magna accumsan</h2>
+          <p class="about-subtitle">Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+          <p class="about-text">Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi
+            praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et
+            accumsan consequat adipiscing lorem.</p>
+          <button class="btn section-btn">Learn More</button>
+          <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+    </section>
+
+
+    <!-- section about 3 -->
+
+    <section class="section about about3">
+      <img src="/img/pic04.jpg" alt="smeleti vulkanai" class="about-img3">
+      <div class="container">
+        <div class="about-title-container about-title-container2">
+          <h2 class="about-title">Interdum felis blandit praesent sed augue</h2>
+          <p class="about-subtitle">Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+          <p class="about-text">Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi
+            praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et
+            accumsan consequat adipiscing lorem.</p>
+          <button class="btn section-btn">Learn More</button>
+          <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+    </section>
+
+
+    <!-- section Services -->
+
+    <section class="section about services">
+      <div class="container">
+        <div class="about-title-container about-title-container-fl">
+          <h2 class="about-title">Accumsan sed tempus adipiscing blandit</h2>
+          <p class="about-subtitle">Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+          <div class="hr"></div>
+          <div class="services-items-container">
+            <!-- one item 1 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-area-chart" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 1 -->
+            <!-- one item 2 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-comment" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 2 -->
+            <!-- one item 3 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-flask" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 3 -->
+            <!-- one item 4 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-paper-plane-o" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 4 -->
+            <!-- one item 5 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-file-text-o" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 5 -->
+            <!-- one item 6 -->
+            <div class="service-item">
+              <i class="fa service-item-icon fa-lock" aria-hidden="true"></i>
+              <h3 class="service-item-title">Ipsum sed commodo</h3>
+              <p class="service-item-text">Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci
+                porttitor.</p>
+            </div>
+            <!-- one item 6 -->
+          </div>
+
+          <button class="btn section-btn item-btn">Learn More</button>
+        </div>
+    </section>
+
+    <!-- section contact======================== -->
+
+    <footer class="section about contact">
+      <div class="contact-container">
+        <div class="container">
+          <div class="about-title-container about-title-container2">
+            <h2 class="about-title">Magna faucibus lorem diam</h2>
+            <p class="about-subtitle">Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+            <div class="input-container">
+              <input class="contact-input" type="email" placeholder="Your Email Address">
+              <button class="btn section-btn item-btn item-btn2">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-icon-container">
+        <div class="icons">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="-foot-text-container">
+          <p>© United. All rights reserved.</p>
+          <p>Design: HTML5 UP</p>
+          <p>Demo Images: Unsplash</p>
+        </div>
+
+      </div>
+    </footer>
+
+
+
+  </main>
 </body>
 
 </html>
