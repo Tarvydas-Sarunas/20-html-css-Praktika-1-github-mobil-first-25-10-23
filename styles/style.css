@@ -137,6 +137,7 @@ header {
   font-weight: 300;
   margin-bottom: 24px;
   line-height: 36px;
+  text-align: center;
 }
 .about-subtitle {
   font-size: 16px;
@@ -227,6 +228,7 @@ header {
 .contact {
   box-shadow: none;
 }
+
 .contact-container {
   background-color: var(--primery);
 }
@@ -272,4 +274,112 @@ header {
 .-foot-text-container {
   font-size: 12px;
   color: #ffffff80;
+}
+@media screen and (min-width: 900px) {
+  .burger {
+    display: none;
+  }
+  .submenu {
+    display: none;
+  }
+  .nav--main {
+    display: flex;
+  }
+  .nav_list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .has-children {
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 30px;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero_img {
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 20px;
+  }
+  .hero-text-container {
+    align-self: center;
+  }
+  .hero-container {
+    max-width: 1000px;
+  }
+  .abaout-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+  }
+  .about_fa {
+    display: block;
+  }
+  .about2-c {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+  }
+  .about-title-container2 {
+    text-align: left;
+    align-self: center;
+  }
+  .about-img2 {
+    border: none;
+    border-right: 5px solid var(--blue);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 40px;
+  }
+  .about-img3 {
+    border: none;
+    border-left: 5px solid var(--green);
+  }
+  .services-items-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-title-container-fl {
+    display: flex;
+    justify-content: center;
+  }
+  .item-btn5 {
+    width: 20%;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .input-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact .container {
+    max-width: 1300px;
+  }
+  .item-btn2 {
+    margin-bottom: 20px;
+  }
+  .-foot-text-container {
+    display: flex;
+    justify-content: center;
+  }
+  .-foot-text-container p {
+    padding: 0 20px;
+  }
+  .borderlr {
+    border-left: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+  }
 }

@@ -45,7 +45,7 @@
           </ul>
         </li>
         <li><a class="nav_link" href="#">Element</a></li>
-        <li><Button class="btn nav--btn"></Button></li>
+        <li><Button class="btn nav--btn">Sign Up</Button></li>
       </ul>
     </nav>
 
@@ -56,9 +56,13 @@
     <!-- hero===================== -->
     <section class="section hero">
       <div class="hero-container">
-        <h2 class="hero_title">The future has landed</h2>
-        <p class="hero_text">And there are no hoverboards or flying cars. Just apps. Lots of mother flipping apps.</p>
-        <img class="hero_img" src="/img/pic01.jpg" alt="computer in the cercle">
+        <div class="hero-text-container">
+          <h2 class="hero_title">The future has landed</h2>
+          <p class="hero_text">And there are no hoverboards or flying cars. Just apps. Lots of mother flipping apps.</p>
+        </div>
+        <div class="hero-img-container">
+          <img class="hero_img" src="/img/pic01.jpg" alt="computer in the cercle">
+        </div>
       </div>
       <i class="fa hero_fa fa-angle-down" aria-hidden="true"></i>
     </section>
@@ -67,21 +71,25 @@
     <section class="section about">
       <img src="/img/pic02.jpg" alt="stalas su kede ir keliais architekto irankiais ant stalo" class="about-img">
       <div class="container">
-        <div class="about-title-container">
-          <h2 class="about-title">Odio faucibus ipsum integer consequat</h2>
-          <p class="about-subtitle">Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
-        </div>
-        <div class="about-text-container">
-          <p class="about-text">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor
-            semper.
-            Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet augue
-            varius
-            tempus lobortis porttitor accumsan consequat adipiscing lorem dolor.</p>
-        </div>
-        <div class="about-text-container">
-          <p class="about-text">Morbi enim nascetur et placerat lorem sed iaculis neque ante adipiscing adipiscing metus
-            massa. Blandit orci porttitor semper. Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi
-            sed nascetur cep aliquet augue varius tempus. Feugiat lorem ipsum dolor nullam.</p>
+        <div class="abaout-container">
+          <div class="about-title-container">
+            <h2 class="about-title">Odio faucibus ipsum integer consequat</h2>
+            <p class="about-subtitle">Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+          </div>
+          <div class="about-text-container">
+            <p class="about-text">Feugiat accumsan lorem eu ac lorem amet sed accumsan donec. Blandit orci porttitor
+              semper.
+              Arcu phasellus tortor enim mi nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet augue
+              varius
+              tempus lobortis porttitor accumsan consequat adipiscing lorem dolor.</p>
+          </div>
+          <div class="about-text-container">
+            <p class="about-text">Morbi enim nascetur et placerat lorem sed iaculis neque ante adipiscing adipiscing
+              metus
+              massa. Blandit orci porttitor semper. Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
+              mi
+              sed nascetur cep aliquet augue varius tempus. Feugiat lorem ipsum dolor nullam.</p>
+          </div>
         </div>
         <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
       </div>
@@ -89,8 +97,10 @@
 
     <!-- section about 2 -->
 
-    <section class="section about">
-      <img src="/img/pic03.jpg" alt="tuscia traukiniu stotis saulelidyje" class="about-img2">
+    <section class="section about about2-c">
+      <div class="about2-img-container">
+        <img src="/img/pic03.jpg" alt="tuscia traukiniu stotis saulelidyje" class="about-img2">
+      </div>
       <div class="container">
         <div class="about-title-container about-title-container2">
           <h2 class="about-title">Interdum amet non magna accumsan</h2>
@@ -107,17 +117,26 @@
     <!-- section about 3 -->
 
     <section class="section about about3">
-      <img src="/img/pic04.jpg" alt="smeleti vulkanai" class="about-img3">
-      <div class="container">
+
+
+      <div class="grid">
         <div class="about-title-container about-title-container2">
-          <h2 class="about-title">Interdum felis blandit praesent sed augue</h2>
-          <p class="about-subtitle">Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
-          <p class="about-text">Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi
-            praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et
-            accumsan consequat adipiscing lorem.</p>
-          <button class="btn section-btn">Learn More</button>
-          <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
+          <div class="container">
+            <h2 class="about-title">Interdum felis blandit praesent sed augue</h2>
+            <p class="about-subtitle">Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+            <p class="about-text">Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi
+              praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et
+              accumsan consequat adipiscing lorem.</p>
+            <button class="btn section-btn">Learn More</button>
+            <i class="fa about_fa fa-angle-down" aria-hidden="true"></i>
+          </div>
         </div>
+        <div class="about2-img-container">
+          <img src="/img/pic04.jpg" alt="smeleti vulkanai" class="about-img3">
+        </div>
+
+
+
     </section>
 
 
@@ -180,7 +199,7 @@
             <!-- one item 6 -->
           </div>
 
-          <button class="btn section-btn item-btn">Learn More</button>
+          <button class="btn section-btn item-btn item-btn5">Magna sed feugiat</button>
         </div>
     </section>
 
@@ -210,7 +229,7 @@
         </div>
         <div class="-foot-text-container">
           <p>© United. All rights reserved.</p>
-          <p>Design: HTML5 UP</p>
+          <p class="borderlr">Design: HTML5 UP</p>
           <p>Demo Images: Unsplash</p>
         </div>
 
